@@ -1,0 +1,79 @@
+<!-- Ernesto Delacruz
+		List1.html
+		23Sept2015
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <link rel="stylesheet" href="themes/Earth.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+</head>
+<body>
+
+<!--Page One/Welcome-->
+<div data-role="page" id="pageone">   
+		
+		<!--Header-->
+		<div data-role="header">
+			<a href="../ASG8/tour.html#Assignment6" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+			<center><img src="images/USA.jpg" alt="Tinker Monkey Productions" height="150" width="300"/></center>
+			<a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-right ui-icon-search ui-btn-icon-notext">Search</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="List1.html" class="ui-btn ui-btn-inline">List1</a></li>
+					<li><a href="List2.html">List2</a></li>
+					<li><a href="List3.html">List3</a></li>
+				</ul>
+			</div>
+		</div>
+ 
+		<!--Main/Body-->
+		<div data-role="main" class="ui-content">
+		
+				<p>
+					<center><h1>List1:</br>Autodivided States</h1></center>
+					
+					<ul data-role="listview" data-icon="false" data-autodividers="true">
+					  <li><a href="#">Alabama</a></li>
+					  <li><a href="#">Colorado</a></li>
+					  <li><a href="#">Delaware</a></li>
+					  <li><a href="#">Florida</a></li>
+					  <li><a href="#">Georgia</a></li>
+					  <li><a href="#">Hawaii</a></li>
+					  <li><a href="#">Illinois</a></li>
+					  <li><a href="#">North Carolina</a></li>
+					  <li><a href="#">South Carolina</a></li>
+					  <li><a href="#">Wyoming</a></li>
+					  
+					</ul>
+  
+				
+				</p>
+			
+			
+			<!--Popup-->
+			<div data-role="popup" id="myPopup1">
+				<p>Sorry but this search button does not work yet.</p>
+			</div>
+			
+		</div>   
+  
+		<!--Footer-->
+		<div data-role="footer">
+			<h1>Assignment 6</h1>
+		</div>
+  
+  </div> 
+
+</body>
+</html>

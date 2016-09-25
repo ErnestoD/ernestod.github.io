@@ -1,0 +1,111 @@
+<!-- Ernesto Delacruz
+		Table2.html
+		15Sept2015
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+  <!-- Include the jQuery library -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <link rel="stylesheet" href="themes/Earth.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+</head>
+<body>
+
+<!--Page One/Welcome-->
+<div data-role="page" id="pageone">   
+		
+		<!--Header-->
+		<div data-role="header">
+			<a href="../ASG8/tour.html#Assignment5" rel="external" class="ui-btn ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+			<center><img src="images/USA.jpg" alt="Tinker Monkey Productions" height="150" width="300"/></center>
+			<a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-right ui-icon-search ui-btn-icon-notext">Search</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="Table1.html" class="ui-btn ui-btn-inline">Table1</a></li>
+					<li><a href="Table2.html">Table2</a></li>
+					<li><a href="Grid1.html">Grid1</a></li>
+				</ul>
+			</div>
+		</div>
+ 
+		<!--Main/Body-->
+		<div data-role="main" class="ui-content">
+		
+				<p>
+					<center><h1>Table2:</br>States, Capitals and Animals</h1></center>
+					
+					<table data-role="table" data-mode="columntoggle" class="ui-responsive" id="myTable">
+						<thead>
+							<tr>
+							  <th>State</th>
+							  <th>Capital</th>
+							  <th data-priority="1">State Bird</th>
+							  <th data-priority="2">State Flower</th>
+							  <th data-priority="3">State Mammal</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+							  <td>Colorado</td>
+							  <td>Denver</td>
+							  <td>Lark Bunting</td>
+							  <td>Rocky Mountain Columbine</td>
+							  <td>Rocky Mountain Bighorn Sheep</td>
+							</tr>
+							<tr>
+							  <td>Georgia</td>
+							  <td>Atlanta</td>
+							  <td>Brown Thrasher</td>
+							  <td>Cherokee Rose</td>
+							  <td>Right Whale</td>
+							</tr>
+							<tr>
+							  <td>North Carolina</td>
+							  <td>Raleigh</td>
+							  <td>Northern Cardinal</td>
+							  <td>Flowering Dogwood</td>
+							  <td>Gray Squirrel</td>
+							</tr>
+							<tr>
+							  <td>South Carolina</td>
+							  <td>Columbia</td>
+							  <td>Carolina Wren</td>
+							  <td>Yellow Jessamine</td>
+							  <td>White-tailed Deer</td>
+							</tr>
+							<tr>
+							  <td>Wyoming</td>
+							  <td>Cheyenne</td>
+							  <td>Western Meadowlark</td>
+							  <td>Indian Paintbrush</td>
+							  <td>Bison</td>
+							</tr>
+						</tbody>
+					</table>
+			
+			
+			<!--Popup-->
+			<div data-role="popup" id="myPopup1">
+				<p>Sorry but this search button does not work yet.</p>
+			</div>
+			
+		</div>   
+  
+		<!--Footer-->
+		<div data-role="footer">
+			<h1>Assignment 5</h1>
+		</div>
+  
+  </div> 
+
+</body>
+</html>

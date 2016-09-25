@@ -1,0 +1,190 @@
+<! DOCTYPE html>
+
+<html>
+
+<head>
+<!-- Ernesto Delacruz
+	 feed.html
+	 21Nov2015
+-->
+<title>Feedback</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+
+<body>
+
+<div class="menu" id="menu">
+	<ul style="position:fixed;">
+	  <li><a href="new.html" title="Home Page">Home</a></li>
+	  <li><a href="bio.html" title="Light Yagami's Biography">Bio</a></li>
+	  <li><a href="sched.html" title="Schedule's for Local Events">Schedule</a></li>
+	  <li><a href="feed.html" title="Voter's Feedback">Feedback</a></li>
+	</ul>
+	<img src="images/Light Banner.png" alt="Light Yagami" align="left" style="position:fixed;">
+</div>
+
+<div class="Light-form">
+	<img src="images/Light notebook.png" alt="Light Yagami">
+</div>
+
+ <section>
+
+         <center><h1><u>Feedback</u></h1></center>
+
+		 <form action="" method="post">
+		 
+			<fieldset name="billing" id="billing">
+				<legend>Voter's Information</legend>
+				
+				<label for="fName">First Name</label>
+				<input name="fName" id="fName" required="required"/>
+				
+				<label for="lName">Last Name</label>
+				<input name="lName" id="lName" required="required"/>
+				
+				<label for="photo">Voter Photo</label>
+				<input type="file" name="pic" accept="image/*" required="required">
+				
+				<label for="gender">Gender</label>				
+					<select name="gender" id="gender" required="required">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						<option value="Other">Other/Prefer not to answer</option>
+					</select>
+					
+				<label for="age">Age</label>
+				<input name="age" id="age" required="required"/>
+				
+				<label for="street">Street Address</label>
+				<input name="street" id="street" />
+				
+				<label for="street2">Street Address (2)</label>
+				<input name="street2" id="street2" />
+				
+				<label for="city">City</label>
+				<input name="city" id="city" required="required"/>
+				
+				<label for="state">State</label>				
+					<select name="state" id="state" required="required">
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AZ">AZ</option>
+						<option value="AR">AR</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DE">DE</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="IA">IA</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="ME">ME</option>
+						<option value="MD">MD</option>
+						<option value="MA">MA</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MS">MS</option>
+						<option value="MO">MO</option>
+						<option value="MT">MT</option>
+						<option value="NE">NE</option>
+						<option value="NV">NV</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>
+						<option value="NY">NY</option>
+						<option value="NC">NC</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WV">WV</option>
+						<option value="WI">WI</option>
+						<option value="WY">WY</option>
+					</select>
+					
+				<label for="zip">ZIP/Postal Code</label>
+				<input name="zip" id="zip" pattern="^\d{5}(\-\d{4})?$" required="required"/>
+				
+				<label for="country">Country</label>
+				<input name="country" id="country" value="United States" required="required"/>
+				
+				<label for="phone">Phone</label>
+				<input name="phone" id="phone" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+				
+				<label for="email">Contact Email</label>
+				<input type="email" name="email" id="email" required="required">
+					
+				<label for="notes">Feedback</label>
+				<textarea name="notes"id="notes" placeholder="If voting for another candidate, please explain who and why."></textarea>
+			</fieldset>
+			
+			<fieldset name="creditcard" id="creditcard">
+				<legend>Donations (optional)</legend>
+				
+				<fieldset class="optionGroup" name="optionGroup" id="optionGroup">
+					<label><input type="radio" name="ccard" id="ccard" value="diners" /><img src="images/diners.png"/></label>
+					<label><input type="radio" name="ccard" id="ccard" value="discover" /><img src="images/discover.png"/></label>
+					<label><input type="radio" name="ccard" id="ccard" value="master" /><img src="images/master.png"/></label>
+					<label><input type="radio" name="ccard" id="ccard" value="visa" /><img src="images/visa.png"/></label>
+					<label><input type="radio" name="ccard" id="ccard" value="paypal" /><img src="images/paypal.png"/></label>
+				</fieldset>
+				
+				<label for="ccardnumber">Credit Card Number</label>
+				<input type="text" name="ccardnumber" id="ccardnumber" pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$" />
+				
+				<label for="ccardmonth">Expiration Date</label>
+					<select name="ccardmonth" id="ccardmonth" >
+						<option>--Month--</option>
+						<option value="january">January (01)</option>
+						<option value="february">February (02)</option>
+						<option value="march">March (03)</option>
+						<option value="april">April (04)</option>
+						<option value="may">May (05)</option>
+						<option value="june">June (06)</option>
+						<option value="july">July (07)</option>
+						<option value="august">August (08)</option>
+						<option value="september">September (09)</option>
+						<option value="october">October (10)</option>
+						<option value="november">November (11)</option>
+						<option value="december">December (12)</option>
+					</select>
+					
+					<select name="ccardyear" id="ccardyear" >
+						<option>--Year--</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+					</select>
+					
+					<label for="csc">CSC</label>
+					<input name="csc" id="csc" pattern="^\d{3}$" placeholder="nnn" >					
+			</fieldset>
+			
+				<center><button type="submit">Submit</button></center>
+		 
+		</form>
+
+      </section>
+
+</body>
+
+</html>

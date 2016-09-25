@@ -1,0 +1,53 @@
+
+body {
+	background: url("images/darkBG.png");	
+	background-position: left top;
+	background-attachment: fixed;	
+	
+	font-family: sans-serif;
+}
+
+.PortfolioImg img{
+	position: absolute;
+    top: -22px;
+    left: 0;
+	z-index: 1;
+}
+
+/* Navigaton Bar*/
+
+.nav ul {
+	position: absolute;
+	top: 350px;
+	left: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;   
+	z-index: 0;
+}
+
+.nav li {
+    /* float: left; */
+	background:rgba(0,0,0,0.3);
+}
+
+.nav a:link, a:visited {
+	border-style: outset;
+	border-color: white;
+    display: block;
+    width: 380px;
+    font-weight: bold;
+    color: #00FF00;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.light a{
+	color: white;
+}
+
+.light a:hover {	
+	color: yellow;
+}

@@ -158,6 +158,8 @@ body {
 
 header {
   background: #444444;
+  border-bottom: 5px solid #bf6702;
+  margin-bottom: 60px;
 }
 
 h1, h4, a {

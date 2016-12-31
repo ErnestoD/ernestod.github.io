@@ -13,6 +13,10 @@ body {
   padding: 0 5%;
 }
 
+#wrapper ul {
+  list-style-position: inside;
+}
+
 a {
   text-decoration: none;
 }
